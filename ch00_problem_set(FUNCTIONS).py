@@ -5,6 +5,9 @@
 # You will need to use the input() function.
 # Make a call to that function
 
+
+
+
 # PROBLEM 2 (Pythagorean theorem - 4pts)
 # The Pythagorean theorem states that of a right triangle, the square of the
 # length of the diagonal side is equal to the sum of the squares of the lengths
@@ -13,19 +16,35 @@
 # Then calculate the length of the third side, and display it in a nicely formatted way.
 # You may ignore the fact that the user can enter negative or zero lengths for the sides.
 
+
+
+
+
 # PROBLEM 3 (Biggest, smallest, average - 4pts)
 # Make a function to ask the user to enter three numbers.
 # Then print the largest, the smallest, and their average, rounded to 2 decimals.
 # Display the answers in a "nicely" formatted way.
 # Make a call to your function.
 
+
+
+
 # PROBLEM 4 (e to the... - 3pts)
 # Calculate the value of e (from the math library) to the power of -1, 0, 1, 2, and 3.
 # display the results, with 5 decimals, in a nicely formatted manner.
+
+
+
+
 
 # PROBLEM 5 (Random int - 3pts)
 # Generate a random integer between 1 and 10 (1 and 10 both included),
 # but only use the random() function (randrange is not allowed here)
 
+
+
+
 # PROBLEM 6 (add me, multiply me - 3pts)
 # Make a function which takes in two integers and RETURNS their sum AND their product.
+
+

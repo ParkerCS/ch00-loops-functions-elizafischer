@@ -20,7 +20,7 @@ while new < 1000:
 
 
 
-print(" ")
+print("")
 # PROBLEM 2 (Number Guessing Game - 6pts)
 # Write a program that takes a random integer between 1 and 1000
 # The program then asks the user to guess the number.
@@ -30,7 +30,7 @@ print(" ")
 # It might be wise, for testing purposes, to also display the number that the
 # program randomly picks, until you are sure that the program works correctly
 print("Problem #2")
-
+'''
 number = random.randrange(0,1001)
 #print(number)
 
@@ -51,7 +51,7 @@ if user < number:
 if user == number:
     print("You guessed the number correctly!")
     print("")
-
+'''
 # PROBLEM 3 (Dice Hi-Low - 6pts)
 # You roll five six-sided dice, one by one.
 # How big is the probability that the value of each die is greater than or equal to the value of the previous die that you rolled?
@@ -59,8 +59,22 @@ if user == number:
 # Determine the probability of success using a simulation of a large number of trials.
 print("Problem #3")
 
+done = True
+total = 0
+fail = 0
+for o in range(100000):
+    roll = []
+    for i in range(1, 6):
+        dice_roll = random.randrange(1, 7)
+        roll.append(dice_roll)
+        if (roll[i] < roll[i - 1]) and i != 0:
+            fail += 1
+
+print("The probability that the value of each roll is greater than or equal to the previous is:", (100000 - fail) / 100000 * 100, "percent")
 
 
+
+print("")
 # PROBLEM 4 (Number Puzzler - 6pts)
 # A, B, C, and D are all different digits.
 # The number DCBA is equal to 4 times the number ABCD.
@@ -69,3 +83,9 @@ print("Problem #3")
 # Use a quadruple-nested loop to solve.
 print("Problem #4")
 
+for a in range(20):
+    for b in range(20):
+        for c in range(20):
+            for d in range(20):
+                if ((int(d) * int(c) * int(b) * int(a)) == 4 * (int(a) * int(b) * int(c) * int(d))) and a != 0 and d != 0:
+                    print ("A = " + str(a) + " B = " + str(b) + " C = " + str(c) + " and D = " + str(d))

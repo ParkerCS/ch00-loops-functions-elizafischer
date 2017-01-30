@@ -52,7 +52,7 @@ if user == number:
     print("You guessed the number correctly!")
     print("")
 '''
-# PROBLEM 3 (Dice Hi-Low - 6pts)
+# PROBLEM 3 (Dice Hi-Low - 6pts) ****
 # You roll five six-sided dice, one by one.
 # How big is the probability that the value of each die is greater than or equal to the value of the previous die that you rolled?
 # For example, the sequence “1, 1, 4, 4, 6” is a success, but “1, 1, 4, 3, 6” is not.
@@ -75,7 +75,7 @@ print("The probability that the value of each roll is greater than or equal to t
 
 
 print("")
-# PROBLEM 4 (Number Puzzler - 6pts)
+# PROBLEM 4 (Number Puzzler - 6pts) *****
 # A, B, C, and D are all different digits.
 # The number DCBA is equal to 4 times the number ABCD.
 # What are the digits?

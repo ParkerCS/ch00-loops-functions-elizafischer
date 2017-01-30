@@ -93,9 +93,12 @@ print()
 print("Problem #5")
 
 integer = int(random.random())
-integer = (integer * 10) + 1
+integer = (integer * 10)
+if integer < 1:
+    integer += 1
 print(integer)
 print()
+
 
 # PROBLEM 6 (add me, multiply me - 3pts)
 # Make a function which takes in two integers and RETURNS their sum AND their product.

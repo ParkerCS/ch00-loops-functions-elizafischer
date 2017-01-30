@@ -1,7 +1,7 @@
 #SECTION 2 - FUNCTIONS (20PTS TOTAL)
 import math
 import random
-
+'''
 #PROBLEM 1 (Length of String - 3pts)
 # Make a function which asks the user to enter a string, then prints the length of that string.
 # You will need to use the input() function.
@@ -86,18 +86,16 @@ e(2)
 e(3)
 print()
 
-
-# PROBLEM 5 (Random int - 3pts) ****
+'''
+# PROBLEM 5 (Random int - 3pts)
 # Generate a random integer between 1 and 10 (1 and 10 both included),
 # but only use the random() function (randrange is not allowed here)
 print("Problem #5")
 
-integer = int(random.random())
-integer = (integer * 10)
-if integer < 1:
-    integer += 1
-print(integer)
-print()
+integer = random.random()
+integer = round(integer,1 )
+print(integer * 9 + 1)
+
 
 
 # PROBLEM 6 (add me, multiply me - 3pts)

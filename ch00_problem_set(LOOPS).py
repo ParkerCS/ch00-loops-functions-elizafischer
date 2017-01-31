@@ -20,7 +20,7 @@ while new < 1000:
 
 
 
-print("")
+print("") 
 # PROBLEM 2 (Number Guessing Game - 6pts)
 # Write a program that takes a random integer between 1 and 1000
 # The program then asks the user to guess the number.

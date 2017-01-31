@@ -59,20 +59,21 @@ if user == number:
 # Determine the probability of success using a simulation of a large number of trials.
 print("Problem #3")
 
-done = True
-total = 0
-fail = 0
-for o in range(100000):
+sucesses = 0
+total = 1000
+failed = 0
+for i in range(1000):
     roll = []
-    for i in range(1, 6):
-        dice_roll = random.randrange(1, 7)
+    for o in range(1, 6):
+        dice_roll = random.randrange(1,7)
         roll.append(dice_roll)
-        if (roll[i] < roll[i - 1]) and i != 0:
-            fail += 1
+        if (int(roll[0]) <= int(roll[1]) and (int(roll[1]) <= int(roll[2])) and (int(roll[2]) <= int(roll[3])) and (
+            int(roll[3]) <= int(roll[4])) and (int(roll[4]) <= int(roll[5])):
+            sucesses += 1
+        else:
+            failed += 1
 
-print("The probability that the value of each roll is greater than or equal to the previous is:", (100000 - fail) / 100000 * 100, "percent")
-
-
+print("The probability that the value of each roll is greater than or equal to the previous is:", ((sucesses) / (sucesses + failed)) * 100, "percent")
 
 print("")
 # PROBLEM 4 (Number Puzzler - 6pts) *****
@@ -83,9 +84,9 @@ print("")
 # Use a quadruple-nested loop to solve.
 print("Problem #4")
 
-for a in range(20):
-    for b in range(20):
-        for c in range(20):
-            for d in range(20):
+for a in range(10):
+    for b in range(10):
+        for c in range(10):
+            for d in range(10):
                 if ((int(d) * int(c) * int(b) * int(a)) == 4 * (int(a) * int(b) * int(c) * int(d))) and a != 0 and d != 0:
                     print ("A = " + str(a) + " B = " + str(b) + " C = " + str(c) + " and D = " + str(d))

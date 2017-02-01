@@ -1,3 +1,4 @@
+# 17/22
 # LOOPS (22pts TOTAL)
 import random
 
@@ -52,30 +53,39 @@ if user == number:
     print("You guessed the number correctly!")
     print("")
 
+# Lee - This needs to go in a loop to make it a "game".  (-2)
+
 # PROBLEM 3 (Dice Hi-Low - 6pts) ****
 # You roll five six-sided dice, one by one.
 # How big is the probability that the value of each die is greater than or equal to the value of the previous die that you rolled?
 # For example, the sequence “1, 1, 4, 4, 6” is a success, but “1, 1, 4, 3, 6” is not.
 # Determine the probability of success using a simulation of a large number of trials.
 print("Problem #3")
-'''
+
 sucesses = 0
-total = 10
+total = 1000
 failed = 0
-for i in range(10):
-    roll = []
+for i in range(total):
+    #roll = []
+    roll = 0
     for o in range(1, 6):
         dice_roll = (random.randrange(1,7))
-        roll.append(dice_roll)
+        #roll.append(dice_roll)
         #print(roll)
-        if int(roll[0]) <= int(roll[1] and int(roll[1]) <= int(roll[2]) and int(roll[2]) <= int(roll[3]) and int(roll[3]) <= int(roll[4]) and int(roll[4]) <= int(roll[5])):
-            sucesses += 1
+        if dice_roll >= roll:
+            roll = dice_roll
+            continue
+            #sucesses += 1
         else:
-            failed += 1
+            break
+            #failed += 1
+    else:
+        sucesses += 1
 
-print("The probability that the value of each roll is greater than or equal to the previous is:", ((sucesses) / (sucesses + failed)) * 100, "percent")
+print("The probability that the value of each roll is greater than or equal to the previous is:", ((sucesses) / (total)) * 100, "percent")
 # I have been working at this for a while and am not completely sure why it does not work
-'''
+
+# Lee - See solution, check against version control history to see what the changes are.  Some of it made sense, and I think you were on the right track (-3)
 
 print("")
 # PROBLEM 4 (Number Puzzler - 6pts)

@@ -1,3 +1,5 @@
+#18/20
+
 #SECTION 2 - FUNCTIONS (20PTS TOTAL)
 import math
 import random
@@ -86,6 +88,7 @@ e(2)
 e(3)
 print()
 
+# Lee - DRY principle, use a loop.
 
 # PROBLEM 5 (Random int - 3pts)
 # Generate a random integer between 1 and 10 (1 and 10 both included),
@@ -95,6 +98,8 @@ print("Problem #5")
 integer = random.random()
 integer = round(integer,1 )
 print(integer * 9 + 1)
+
+# Lee - This shouldn't be rounded.  it should be an integer.  Also, your range is only 9.  This means you give a random number from 1 to 9 effectively. (-2)
 
 
 
